@@ -1,0 +1,35 @@
+
+
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+  	<h1 id='logo'>
+	  <%= link_to (image_tag('http://placehold.it/200x40')), refinery.root_path %>
+    </h1>
+ <!--   
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.htm"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="city.htm">City of Viroqua</a></li>
+        <li><a href="chamber.htm">Chamber Mainstreet</a></li>
+        <li><a href="tourism.htm">Viroqua Tourism</a></li>
+      </ul>
+    </div>--><!--/.nav-collapse -->
+  </div>
+</div>
+-->
+
+<!-- http://stackoverflow.com/questions/19423796/refinerycms-apply-bootstrap-styles-to-navigation-menu -->
+<%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+
+<div class="navbar">
+  <%= navigation_menu.to_html %>
+</div>
