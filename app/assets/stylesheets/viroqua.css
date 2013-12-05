@@ -1,0 +1,343 @@
+/* Viroqua CSS */
+
+
+/* COLORS -----------------------
+
+Main Green			rgba(0,112,60,1)
+Main Teal			rgba(53,147,156,1)
+Main Lime Green		rgba(193,216,47,1)
+Main Orange			rgba(248,151,40,1)
+
+Red					rgba(198,5,81,1)
+Blue				rgba(0,85,129,1)
+Light Blue			rgba(0,164,228,1)
+Sub Green			rgba(94,151,50,1)
+Yellow				rgba(255,221,0,1)
+
+
+*/
+
+
+
+
+
+
+.row.spacer				{ min-height: 1px; }
+
+.row.spacer.fifteen		{ min-height: 15px; }
+.row.spacer.thirty		{ min-height: 30px; }
+
+.light					{ font-weight: 300; }
+.standard				{ font-weight: 400; }
+.strong					{ font-weight: 700; }
+
+.text-upper				{ text-transform: uppercase; }
+
+.teal					{ color: rgba(53,147,156,1); }
+.lime					{ color: rgba(193,216,47,1); }
+.orange					{ color: rgba(248,151,40,1); }
+.red					{ color: rgba(198,5,81,1); }
+.blue					{ color: rgba(0,85,129,1); }
+.yellow					{ color: rgba(255,221,0,1); }
+.white					{ color: rgba(255,255,255,1); }
+
+.center					{ float: none; margin-left: auto; margin-right: auto; }
+
+.gap					{ min-height: 1px; background: none; }
+
+.left					{ float: left; }
+.right					{ float: right; }
+
+.remove-padding			{ padding: 0; }
+.remove-margin			{ margin: 0; }
+
+.btn.orange {
+  color: rgba(255,255,255,1);
+  background-color: rgba(248,151,40,1);
+  border: 0px solid transparent;
+  font-weight: 700;
+  text-shadow: 1px 1px 0px rgba(0,0,0,.35);
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: .05em;
+}
+
+.btn.orange:hover {
+  /* background-color: rgba(248,151,40,.9); */
+  box-shadow: 0px 0px 1px 4px rgba(255,255,255,.45);
+  text-shadow: 1px 1px 0px rgba(0,0,0,.65); 
+  text-decoration: none;
+}
+
+/* HEADER UNIQUE SUB-PAGES */
+
+.navbar-default .navbar-nav.city > li.active > a {
+  margin-top: 0px;
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  letter-spacing:.25em;
+  transition: 150ms ease-in-out;
+  background: rgba(0,85,129,1);
+  border-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-bottom: 2px inset rgba(0,85,129,1);
+}
+
+.navbar-default .navbar-nav.city > li > a:hover,
+.navbar-default .navbar-nav.city > li > a:focus {
+  color: rgba(0,85,129,1);
+  background-color: transparent;
+  border-bottom: 3px inset rgba(0,85,129,1);
+}
+
+.navbar-default .navbar-nav.city > li.active > a:hover,
+.navbar-default .navbar-nav.city > li.active > a:focus {
+  color: rgba(255,255,255,1);
+  background: rgba(0,85,129,.75);
+  border-bottom: 2px inset rgba(0,85,129,1);
+}
+
+.navbar-default .navbar-nav.chamber > li.active > a {
+  margin-top: 0px;
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  letter-spacing:.25em;
+  transition: 150ms ease-in-out;
+  background: rgba(248,151,40,1);
+  border-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-bottom: 2px inset rgba(248,151,40,1);
+}
+
+.navbar-default .navbar-nav.chamber > li > a:hover,
+.navbar-default .navbar-nav.chamber > li > a:focus {
+  color: rgba(248,151,40,1);
+  background-color: transparent;
+  border-bottom: 3px inset rgba(248,151,40,1);
+}
+
+.navbar-default .navbar-nav.chamber > li.active > a:hover,
+.navbar-default .navbar-nav.chamber > li.active > a:focus {
+  color: rgba(255,255,255,1);
+  background: rgba(248,151,40,.75);
+  border-bottom: 2px inset rgba(248,151,40,1);
+}
+
+.navbar-default .navbar-nav.tourism > li.active > a {
+  margin-top: 0px;
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  letter-spacing:.25em;
+  transition: 150ms ease-in-out;
+  background: rgba(198,5,81,1);
+  border-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-bottom: 2px inset rgba(198,5,81,1);
+}
+
+.navbar-default .navbar-nav.tourism > li > a:hover,
+.navbar-default .navbar-nav.tourism > li > a:focus {
+  color: rgba(198,5,81,1);
+  background-color: transparent;
+  border-bottom: 3px inset rgba(198,5,81,1);
+}
+
+.navbar-default .navbar-nav.tourism > li.active > a:hover,
+.navbar-default .navbar-nav.tourism > li.active > a:focus {
+  color: rgba(255,255,255,1);
+  background: rgba(198,5,81,.75);
+  border-bottom: 2px inset rgba(198,5,81,1);
+}
+
+/*------------------------------------------------------------------------------- */
+
+
+.top-header				{ min-height: 30px; height: 30px; width: 100%; margin:0; padding: 0; background: rgba(0,85,129,1); }
+
+.top-header ul			{ list-style-type: none; margin: 0; padding: 0; float: right; }
+.top-header ul a li		{ display: inline-block; margin: 0; padding: 0 15px; text-align: center; color: rgba(255,255,255,1); line-height: 30px; font-weight: 400; font-size: .8em; transition: 150ms ease-in-out; height: 30px; float:left; }
+
+.top-header ul a			{ color: rgba(255,255,255,1); margin:0; padding: 0; }
+.top-header ul a:hover		{ text-decoration: none; }
+.top-header ul a:hover li	{ background: rgba(248,151,40,1); }
+
+
+/*------------------------------------------------------------------------------- */
+
+
+a.lime:hover, a.lime:focus 		{ color: rgba(193,216,47,1); text-decoration: none; font-weight: 400; }
+a.gray							{ color: rgba(81,83,85,1); }
+a.gray:hover					{ color: rgba(248,151,40,1); }
+
+
+/*------------------------------------------------------------------------------- */
+
+
+.container.footer		{ padding-top: 30px; padding-bottom: 30px; }
+.footer-outer			{ width: 100%; background: rgba(81,83,85,.10); }
+
+.footer ul				{ list-style-type: none; margin: 0; padding: 0; }
+.footer ul li			{ margin: 0 0 3px 0; font-size: .875em; font-weight: 300; }
+.footer ul li a			{ text-decoration: none; color: rgba(81,83,85,1); font-weight: 300; }
+
+.footer ul li a:hover	{ color: rgba(0,85,129,1); text-decoration: underline; }
+
+.footer ul li.home, .footer h4	{ font-size: 1em; font-weight: 300; text-transform: uppercase; }
+.footer p						{ font-size: .875em; font-weight: 300; }
+
+.container.sub-footer			{ padding-top: 27px; padding-bottom: 27px;}
+.container.sub-footer p			{ font-size: .875em; }
+.container.sub-footer p a		{ color: rgba(0,85,129,1); }
+.container.sub-footer p a:hover	{ color: rgba(0,85,129,1); text-decoration: underline; }
+
+
+/*------------------------------------------------------------------------------- */
+
+
+.top-header				{ min-height: 30px; height: 30px; width: 100%; margin:0; padding: 0; background: rgba(0,85,129,1); }
+
+.top-header ul			{ list-style-type: none; margin: 0; padding: 0; float: right; }
+.top-header ul a li		{ display: inline-block; margin: 0; padding: 0 15px; text-align: center; color: rgba(255,255,255,1); line-height: 30px; font-weight: 400; font-size: .8em; transition: 150ms ease-in-out; height: 30px; float:left; }
+
+.top-header ul a			{ color: rgba(255,255,255,1); margin:0; padding: 0; }
+.top-header ul a:hover		{ text-decoration: none; }
+.top-header ul a:hover li	{ background: rgba(255,255,255,1); color: rgba(0,85,129,1); }
+
+
+.home-hero				{ width: 100%; min-height: 300px; height: 300px; background: url(../img/home-hero2.jpg) no-repeat; background-size: cover; background-position: center center; }
+.home-hero h1			{ margin: 0; padding: 0; text-align: center; font-weight: 700; color: rgba(255,255,255,1); font-size: 3em; text-transform: uppercase; text-shadow: 3px 3px 0px rgba(0,0,0,.35); }
+.home-hero h2			{ margin: 0; padding: 0; text-align: center; font-weight: 100; color: rgba(255,255,255,1); font-size: 1.8em; text-shadow: 1px 1px 0px rgba(0,0,0,.05); line-height: 1.2; text-shadow: 1px 1px 0px rgba(0,0,0,.35); }
+
+.sub-hero.city			{ width: 100%; min-height: 150px; height: 150px; background: url(../img/sub-image-city.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(0,85,129,.75); */ }
+.sub-hero.chamber		{ width: 100%; min-height: 150px; height: 150px; background: url(../img/sub-image-chamber.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(255,221,0,.75); */ }
+.sub-hero.tourism		{ width: 100%; min-height: 150px; height: 150px; background: url(../img/sub-image-tourism.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(198,5,81,.75); */ }
+
+.sub-gap.city			{ width: 100%; min-height: 9px; height: 9px; background: rgba(0,85,129,1); background-size: cover; background-position: center center; }
+.sub-gap.chamber		{ width: 100%; min-height: 9px; height: 9px; background: rgba(248,151,40,1); background-size: cover; background-position: center center; }
+.sub-gap.tourism		{ width: 100%; min-height: 9px; height: 9px; background: rgba(198,5,81,1); background-size: cover; background-position: center center; }
+
+
+div.home-circle			{ width: 155px; min-width: 155px; height: 155px; min-height: 155px; border-radius: 155px;  margin: 0 auto; transition: 150ms ease-in-out;  }
+
+div.home-circle.teal	{ background: rgba(53,147,156,1); }
+div.home-circle.orange	{ background: rgba(248,151,40,1); }
+div.home-circle.lime	{ background: rgba(193,216,47,1); }
+div.home-circle.red		{ background: rgba(198,5,81,1); }
+div.home-circle.blue	{ background: rgba(0,85,129,1); }
+div.home-circle.yellow	{ background: rgba(255,221,0,1); }
+
+div.home-circle.city	{ background: rgba(0,85,129,.1); }
+div.home-circle.chamber	{ background: rgba(248,151,40,.1); }
+div.home-circle.tourism	{ background: rgba(198,5,81,.1); }
+
+div.home-circle h1		{ text-align: center; font-size: 6em; color: rgba(255,255,255,1); line-height: 155px; margin: 0; padding: 0; font-weight: 100; }
+
+div.home-circle.city h1		{ color: rgba(0,85,129,1); font-size: 4em; }
+div.home-circle.chamber	h1	{ color: rgba(248,151,40,1); font-size: 4em; }
+div.home-circle.tourism	h1	{ color: rgba(198,5,81,1); font-size: 4em; }
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+.page-header.first		{ margin-top: 0px !important; }
+.page-header.first h1	{ margin-top: 0px !important; }
+
+h1.first				{ margin-top: 0px; margin-bottom: 20px; }
+
+.block											{ min-height: 100px; padding: 15px 0; margin-bottom: 20px; transition: 150ms ease-in-out; }
+
+.block.city				{ background: rgba(0,85,129,.1); }
+.block.chamber			{ background: rgba(248,151,40,.1); }
+.block.tourism			{ background: rgba(198,5,81,.1); }
+
+
+/* LEFT MENUS ----------------------------------------------------------------------------------------*/
+
+.nav-pills > li > a			{ border-radius: 0; margin-bottom: 0; transition: 150ms ease-in-out; background: red; margin: 0; background: rgba(81,83,85,.04); font-weight: 300; }
+.nav-pills > li > a:hover, .nav-pills > li.active > a:focus { background-color: rgba(81,83,85,.1); }
+
+.nav-pills.city > li > a { color: rgba(0,85,129,1); padding-left: 8px; }
+.nav-pills.city > li.active > a, .nav-pills.city > li.active > a:hover, .nav-pills.city > li.active > a:focus { color: #ffffff; background-color: rgba(0,85,129,1); font-weight: 700; }
+
+.nav-pills.chamber > li > a { color: rgba(248,151,40,1); padding-left: 8px; }
+.nav-pills.chamber > li.active > a, .nav-pills.chamber > li.active > a:hover, .nav-pills.chamber > li.active > a:focus { color: #ffffff; background-color: rgba(248,151,40,1); font-weight: 700; }
+
+.nav-pills.tourism > li > a { color: rgba(198,5,81,1); padding-left: 8px; }
+.nav-pills.tourism > li.active > a, .nav-pills.tourism > li.active > a:hover, .nav-pills.tourism > li.active > a:focus { color: #ffffff; background-color: rgba(198,5,81,1); font-weight: 700; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
