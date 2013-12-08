@@ -38,4 +38,5 @@ Virq10::Application.configure do
   config.assets.debug = true
 
   #Refinery::Core.config.s3_backend = true
+  
 end
