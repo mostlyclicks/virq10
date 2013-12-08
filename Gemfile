@@ -9,6 +9,8 @@ gem 'pg'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'rails_12factor'
 gem 'unicorn'
+gem 'fog'
+gem 'unf'
 
 
 # Gems used only for assets and not required
