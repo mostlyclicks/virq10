@@ -1,5 +1,15 @@
 module ApplicationHelper
 
+  def top_menu
+    menu_items = Refinery::Menu.new(Refinery::Page.top_menu_pages)
+
+    presenter = Refinery::Pages::MenuPresenter.new(menu_items, self)
+    presenter.dom_id = "top_menu"
+    presenter.css = "top_menu"
+    presenter.menu_tag = :div
+    presenter
+  end
+
   def navigation_menu
     presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
     presenter.css = "navbar-inner"

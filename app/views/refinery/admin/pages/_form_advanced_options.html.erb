@@ -4,6 +4,14 @@
   <div class="hemisquare">
     <h2><%= t('.page_options') %></h2>
 
+    <div class="field">
+      <span class="label_with_help">
+        <%= f.label :show_in_top_menu, "Show in top menu" %>
+      </span>
+      <%= f.check_box :show_in_top_menu %> Show this page in the top menu
+    </div>
+
+
     <div class='field'>
       <span class='label_with_help'>
         <%= f.label :show_in_footer, "Show in footer" %>
