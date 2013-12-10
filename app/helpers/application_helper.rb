@@ -12,7 +12,7 @@ module ApplicationHelper
 
   def navigation_menu
     presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
-    presenter.css = "navbar-inner"
+    presenter.css = "navbar-inners"
     presenter.menu_tag = :div
     presenter.list_tag_css = "nav"
     presenter.selected_css = "active"
@@ -30,6 +30,10 @@ module ApplicationHelper
     presenter.css = "footer_menu"
     presenter.menu_tag = :div
     presenter
+  end
+
+  def sub_menu_pages(page)
+    Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == page.id }.children)
   end
   
 end
