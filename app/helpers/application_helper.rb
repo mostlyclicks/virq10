@@ -35,5 +35,17 @@ module ApplicationHelper
   def sub_menu_pages(page)
     Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == page.id }.children)
   end
+
+  def city_footer_menu
+
+  end
+
+  def tourism_footer_menu
+
+  end
+
+  def chamber_footer_menu
+
+  end
   
 end
