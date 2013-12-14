@@ -21,7 +21,6 @@ Yellow				rgba(255,221,0,1)
 
 
 
-
 .row.spacer				{ min-height: 1px; }
 
 .row.spacer.fifteen		{ min-height: 15px; }
@@ -68,10 +67,43 @@ Yellow				rgba(255,221,0,1)
   text-shadow: 1px 1px 0px rgba(0,0,0,.65); 
   text-decoration: none;
 }
+/*
+.navbar-header {
+  height:80px;
+  border:1px solid red;
+}*/
 
 /* HEADER UNIQUE SUB-PAGES */
 
+.navbar-default{
+  border:1px solid red;
+  height:103px;
+}
+
+.navbar-brand {
+  float: left;
+margin-top: -20px;
+padding: 0;
+font-size: 18px;
+background-image: url(/assets/logo.png);
+background-repeat: none;
+background-size: 136px 100px;
+background-position: center top;
+width: 136px;
+height: 103px;
+border-bottom: 5px solid rgba(0,85,129,1);
+}
+
+.navbar-default .navbar-nav > li > a {
+  
+  margin:0 15px;
+  padding:0;
+  line-height: 100px;
+
+}
+
 .navbar-default .navbar-nav.city > li.active > a {
+
   margin-top: 0px;
   color: rgba(255,255,255,1);
   font-weight: 300;
@@ -216,13 +248,13 @@ a.gray:hover					{ color: rgba(248,151,40,1); }
 .top-header ul a:hover li	{ background: rgba(255,255,255,1); color: rgba(0,85,129,1); }
 
 
-.home-hero				{ width: 100%; min-height: 300px; height: 300px; background: url(../img/home-hero2.jpg) no-repeat; background-size: cover; background-position: center center; }
+.home-hero				{ width: 100%; min-height: 300px; height: 300px; background: url(/assets/home-hero2.jpg) no-repeat; background-size: cover; background-position: center center; }
 .home-hero h1			{ margin: 0; padding: 0; text-align: center; font-weight: 700; color: rgba(255,255,255,1); font-size: 3em; text-transform: uppercase; text-shadow: 3px 3px 0px rgba(0,0,0,.35); }
 .home-hero h2			{ margin: 0; padding: 0; text-align: center; font-weight: 100; color: rgba(255,255,255,1); font-size: 1.8em; text-shadow: 1px 1px 0px rgba(0,0,0,.05); line-height: 1.2; text-shadow: 1px 1px 0px rgba(0,0,0,.35); }
 
-.sub-hero.city			{ width: 100%; min-height: 150px; height: 150px; background: url(../img/sub-image-city.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(0,85,129,.75); */ }
-.sub-hero.chamber		{ width: 100%; min-height: 150px; height: 150px; background: url(../img/sub-image-chamber.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(255,221,0,.75); */ }
-.sub-hero.tourism		{ width: 100%; min-height: 150px; height: 150px; background: url(../img/sub-image-tourism.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(198,5,81,.75); */ }
+.sub-hero.city			{ width: 100%; min-height: 150px; height: 150px; background: url(/assets/sub-image-city.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(0,85,129,.75); */ }
+.sub-hero.chamber		{ width: 100%; min-height: 150px; height: 150px; background: url(/assets/sub-image-chamber.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(255,221,0,.75); */ }
+.sub-hero.tourism		{ width: 100%; min-height: 150px; height: 150px; background: url(/assets/sub-image-tourism.jpg) no-repeat; background-size: cover; background-position: center center; /* border-bottom: 9px solid rgba(198,5,81,.75); */ }
 
 .sub-gap.city			{ width: 100%; min-height: 9px; height: 9px; background: rgba(0,85,129,1); background-size: cover; background-position: center center; }
 .sub-gap.chamber		{ width: 100%; min-height: 9px; height: 9px; background: rgba(248,151,40,1); background-size: cover; background-position: center center; }

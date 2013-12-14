@@ -5,16 +5,21 @@ module ApplicationHelper
 
     presenter = Refinery::Pages::MenuPresenter.new(menu_items, self)
     presenter.dom_id = "top_menu"
-    presenter.css = "top_menu"
+    presenter.css = "navbar navbar-default navbar-static-top"
+    presenter.list_tag_css = "nav navbar-nav navbar-right"
     presenter.menu_tag = :div
     presenter
+  end
+
+  def current_page(page)
+    @current_page = page
   end
 
   def navigation_menu
     presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
     presenter.css = "navbar-inners"
     presenter.menu_tag = :div
-    presenter.list_tag_css = "nav"
+    presenter.list_tag_css = "nav nav-pills nav-stacked chamber"
     presenter.selected_css = "active"
     presenter.first_css = ""
     presenter.last_css = ""
@@ -32,8 +37,32 @@ module ApplicationHelper
     presenter
   end
 
-  def sub_menu_pages(page)
-    Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == page.id }.children)
+  #more presenter friendly
+  def sub_menu_pages
+    sub_menu_items = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == @page.id }.children)
+    style = page_style(@page)
+    presenter = Refinery::Pages::MenuPresenter.new(sub_menu_items, self)
+    presenter.menu_tag = :div
+    presenter.css = ''
+    presenter.list_tag_css = "nav nav-pills nav-stacked #{style}"
+    presenter.max_depth = 1
+    presenter
+  end
+
+  def page_style(page)
+    if page.slug == 'city-of-viroqua'
+        'city'
+    elsif page.slug == 'viroqua-tourism'
+        'tourism'
+    else
+        'chamber'
+    end
+  end
+
+  def nav_active(page)
+    if page == @current_page
+        'active'        
+    end
   end
 
   def city_footer_menu

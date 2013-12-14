@@ -1,5 +1,75 @@
 
-<%= footer_menu.to_html %>
+<%#= footer_menu.to_html %>
+
+	<div class="footer-outer">
+	<div class="container footer">
+		<div class="row">
+
+			<div class="col-md-3">
+				<ul>
+					<li class="home"><a href="">Home</a></li>
+					<li class="home"><a href="">Social Media</a></li>
+					<li class="home"><a href="">About Viroqua</a></li>
+					<li class="home"><a href="">FAQ's</a></li>
+				</ul>
+				<div class="row spacer fifteen"></div>
+				<p>City of Viroqua<br/>
+				202 North Main Street<br/>
+				Viroqua WI 54665</p>
+				<div class="row spacer fifteen"></div>
+				<p>608-637-2575<br/>
+				<a href="" class="gray">info@viroqua.gov</a></p>
+				
+			</div>
+			<div class="col-md-3">
+				<h5 class="text-upper light">City of Viroqua</h5>
+				<ul>
+					<li><a href="">Departments</a></li>
+					<li><a href="">City Government</a></li>
+					<li><a href="">City/Bus. Services</a></li>
+					<li><a href="">Community</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="text-upper light">Chamber Mainstreet</h5>
+				<ul>
+					<li><a href="">Start a Business</a></li>
+					<li><a href="">Economic Development</a></li>
+					<li><a href="">Education</a></li>
+					<li><a href="">Healthcare</a></li>
+					<li><a href="">About the Chamber</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="text-upper light">Viroqua Tourism</h5>
+				<ul>
+					<li><a href="">What to do</a></li>
+					<li><a href="">Shopping</a></li>
+					<li><a href="">Dining</a></li>
+					<li><a href="">Accomodations</a></li>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+	</div>
+	<div class="container sub-footer">
+    	<div class="row">
+    		<div class="col-sm-9">
+    			<p class="blue strong">© 2013 City of Viroqua. All rights reserved.<br/>
+    			<span class="gray"><a href="" style="margin-right:10px;">Privacy Policy</a><a href="">Terms of Use</a></span></p>
+    			
+    		</div>
+    		<div class="col-sm-3">
+    			
+				
+    	
+    	
+    		</div>
+    	</div>
+    </div>
+
 <p>
   <%= t('.copyright', :year => Time.now.year,
                       :site_name => Refinery::Core.site_name) %>
