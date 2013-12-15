@@ -263,6 +263,8 @@ a.gray:hover					{ color: rgba(248,151,40,1); }
 
 div.home-circle			{ width: 155px; min-width: 155px; height: 155px; min-height: 155px; border-radius: 155px;  margin: 0 auto; transition: 150ms ease-in-out;  }
 
+div.center-icon {padding-top:40px;padding-left:42px;}
+
 div.home-circle.teal	{ background: rgba(53,147,156,1); }
 div.home-circle.orange	{ background: rgba(248,151,40,1); }
 div.home-circle.lime	{ background: rgba(193,216,47,1); }
@@ -271,8 +273,20 @@ div.home-circle.blue	{ background: rgba(0,85,129,1); }
 div.home-circle.yellow	{ background: rgba(255,221,0,1); }
 
 div.home-circle.city	{ background: rgba(0,85,129,.1); }
+h1.home-city-icon {background:url('/assets/City-Blue.png') -1px -1px no-repeat;height:70px;width:70px;padding:20px;}
+h1.home-gov-icon {background:url('/assets/City-Blue.png') -72px -1px no-repeat;height:70px;width:70px;padding:20px;}
+h1.home-services-icon {background:url('/assets/City-Blue.png') -143px -1px no-repeat;height:70px;width:70px;padding:20px;}
+
 div.home-circle.chamber	{ background: rgba(248,151,40,.1); }
+h1.home-start-icon {background:url('/assets/Chamber-Orange.png') -1px -1px no-repeat;height:70px;width:70px;padding:20px;}
+h1.home-econ-icon {background:url('/assets/Chamber-Orange.png') -72px -1px no-repeat;height:70px;width:70px;padding:20px;}
+h1.home-property-icon {background:url('/assets/Chamber-Orange.png') -143px -1px no-repeat;height:70px;width:70px;padding:20px;}
+
 div.home-circle.tourism	{ background: rgba(198,5,81,.1); }
+h1.home-todo-icon {background:url('/assets/Tourism-violet.png') -72px -1px no-repeat;height:70px;width:70px;padding:20px;}
+h1.home-shopping-icon {background:url('/assets/Tourism-violet.png') -143px -1px no-repeat;height:70px;width:70px;padding:20px;}
+h1.home-dining-icon {background:url('/assets/Tourism-violet.png') -1px -1px no-repeat;height:70px;width:70px;padding:20px;}
+
 
 div.home-circle h1		{ text-align: center; font-size: 6em; color: rgba(255,255,255,1); line-height: 155px; margin: 0; padding: 0; font-weight: 100; }
 
