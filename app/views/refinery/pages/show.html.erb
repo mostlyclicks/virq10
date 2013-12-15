@@ -1,18 +1,16 @@
-<%#= @page.slug %>
-<%# @class = @page.slug %>
-<%#= if @page puts 'true' %>
+
 <div class="sub-hero <%= page_style(@page) -%>">
-	    <div class="container">
-	    	<div class="row spacer thirty"></div>
-	    	<div class="row spacer thirty"></div>
-	    	<div class="row">
-	    		<div class="col-md-12">
-	    			
-	    			
-	    		</div>
-	    	</div>
-	    </div>
-	</div>
+    <div class="container">
+    	<div class="row spacer thirty"></div>
+    	<div class="row spacer thirty"></div>
+    	<div class="row">
+    		<div class="col-md-12">
+    			
+    			
+    		</div>
+    	</div>
+    </div>
+</div>
 
 
 
@@ -24,8 +22,7 @@
 	<div class="col-md-3 col-sm4">
 		<!-- application_helper menu presenter -->
 		<%= sub_menu_pages.to_html %>
-    <%#= sub_menu_items = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == @page.id }.children) %>
-
+    
 		<div class="row spacer thirty"></div>
 		<p>
 			<span class="strong" sytle="font-size:115%;">Quick Contact</span>
