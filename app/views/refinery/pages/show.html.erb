@@ -23,8 +23,8 @@
 
 	<div class="col-md-3 col-sm4">
 		<!-- application_helper menu presenter -->
-		<%#= sub_menu_pages.to_html %>
-    <%= sub_menu_items = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == @page.id }.children) %>
+		<%= sub_menu_pages.to_html %>
+    <%#= sub_menu_items = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == @page.id }.children) %>
 
 		<div class="row spacer thirty"></div>
 		<p>
