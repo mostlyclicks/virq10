@@ -37,17 +37,9 @@ module ApplicationHelper
     presenter
   end
 
-  #more presenter friendly
-  def sub_menu_pages
-    sub_menu_items = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == @page.id }.children)
-    style = page_style(@page)
-    presenter = Refinery::Pages::MenuPresenter.new(sub_menu_items, self)
-    presenter.menu_tag = :div
-    presenter.css = ''
-    presenter.list_tag_css = "nav nav-pills nav-stacked #{style}"
-    presenter.max_depth = 1
-    presenter
-  end
+  #presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
+  #presenter.roots = refinery_menu_pages.select{|p| p.parent_id == @page.root.id}
+  #presenter.to_html
 
   def page_style(page)
     if page.slug == 'city-of-viroqua'
@@ -58,6 +50,20 @@ module ApplicationHelper
         'chamber'
     end
   end
+
+  #more presenter friendly
+  def sub_menu_pages#(page)
+    sub_menu_items = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == @page.id }.children)
+    style = page_style(@page)
+    presenter = Refinery::Pages::MenuPresenter.new(sub_menu_items, self)
+    presenter.menu_tag = :div
+    presenter.css = ''
+    presenter.list_tag_css = "nav nav-pills nav-stacked #{style}"
+    presenter.max_depth = 1
+    presenter
+  end
+
+  
 
   def nav_active(page)
     if page == @current_page
