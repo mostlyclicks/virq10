@@ -59,7 +59,7 @@ module ApplicationHelper
     presenter.menu_tag = :div
     presenter.list_tag = :ul
     presenter.css = ''
-    presenter.list_tag_css = "nav nav-pills nav-stacked #{style}"
+    presenter.list_tag_css = "nav nav-pills nav-stacked tourism"#{style}
     presenter.max_depth = 1
     presenter
   end
