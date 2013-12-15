@@ -41,7 +41,14 @@
   		  <%= render '/refinery/content_page' %>
       </div>
   		<div class="col-md-2" style-"background-color:#fefefe;">
-  			box
+  			<% if @page.slug == 'chamber-mainstreet' %>
+          <%= render '/refinery/shared/right_chamber' %>
+        <% elsif @page.slug == 'viroqua-tourism' %>
+          <%= render '/refinery/shared/right_tourism' %>
+        <% elsif @page.slug == 'city-of-viroqua' %>
+          <%= render '/refinery/shared/right_city' %>
+
+        <% end %>
   		</div>
   	</div>	
 	</div>

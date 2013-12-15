@@ -290,8 +290,19 @@ h1.first				{ margin-top: 0px; margin-bottom: 20px; }
 .block											{ min-height: 100px; padding: 15px 0; margin-bottom: 20px; transition: 150ms ease-in-out; }
 
 .block.city				{ background: rgba(0,85,129,.1); }
+.block.city h1.calendar {background:url(/assets/City-Blue.png) -1px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+.block.city h1.council {background:url(/assets/City-Blue.png) -72px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+.block.city h1.zoning {background:url(/assets/City-Blue.png) -143px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+
 .block.chamber			{ background: rgba(248,151,40,.1); }
+.block.chamber h1.calendar {background:url(/assets/Chamber-Orange.png) -1px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+.block.chamber h1.business-dir {background:url(/assets/Chamber-Orange.png) -72px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+.block.chamber h1.move-here {background:url(/assets/Chamber-Orange.png) -143px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+
 .block.tourism			{ background: rgba(198,5,81,.1); }
+.block.tourism h1.calendar {background:url(/assets/Tourism-violet.png) -1px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+.block.tourism h1.farmers {background:url(/assets/Tourism-violet.png) -72px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
+.block.tourism h1.arts {background:url(/assets/Tourism-violet.png) -143px -72px no-repeat;width:70px;height:70px;text-align:center;margin:0;margin-left:23px;margin-bottom:0;margin-top:-10px;}
 
 
 /* LEFT MENUS ----------------------------------------------------------------------------------------*/
