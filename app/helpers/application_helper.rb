@@ -65,16 +65,16 @@ module ApplicationHelper
     end
   end
 
-  def city_footer_menu
+  #def city_footer_menu
+#
+  #end
 
-  end
+  #def tourism_footer_menu
+#
+  #end
 
-  def tourism_footer_menu
-
-  end
-
-  def chamber_footer_menu
-
-  end
+  #def chamber_footer_menu
+#
+  #end
   
 end
