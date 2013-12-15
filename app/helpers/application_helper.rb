@@ -54,7 +54,7 @@ module ApplicationHelper
         'city'
     elsif page.slug == 'viroqua-tourism'
         'tourism'
-    else
+    elsif page.slug == 'chamber-mainstreet'
         'chamber'
     end
   end
