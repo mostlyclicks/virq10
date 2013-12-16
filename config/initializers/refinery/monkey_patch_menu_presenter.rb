@@ -21,7 +21,7 @@ module Refinery
       self.selected_css = :selected
       self.first_css = :first
       self.last_css = :last
-      self.list_tag_css = 'nav'
+      self.list_tag_css = :ul
 
       def roots
         config.roots.presence || collection.roots
