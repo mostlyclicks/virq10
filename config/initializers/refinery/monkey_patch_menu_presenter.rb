@@ -13,15 +13,15 @@ module Refinery
       config_accessor :roots, :menu_tag, :list_tag, :list_item_tag, :css, :dom_id,
                       :max_depth, :selected_css, :first_css, :last_css, :list_tag_css,
                       :link_tag_css
-      self.dom_id = 'menu'
-      self.css = 'menu clearfix'
-      self.menu_tag = :nav
-      self.list_tag = :ul
-      self.list_item_tag = :li
-      self.selected_css = :selected
-      self.first_css = :first
-      self.last_css = :last
-      self.list_tag_css = :ul
+      # self.dom_id = 'menu'
+      # self.css = 'menu clearfix'
+      # self.menu_tag = :nav
+      # self.list_tag = :ul
+      # self.list_item_tag = :li
+      # self.selected_css = :selected
+      # self.first_css = :first
+      # self.last_css = :last
+      # self.list_tag_css = :ul
 
       def roots
         config.roots.presence || collection.roots
