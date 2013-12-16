@@ -54,9 +54,9 @@ module ApplicationHelper
     style = page_style(@page)
     presenter = Refinery::Pages::MenuPresenter.new(sub_menu_items, self)
     presenter.menu_tag = :div
-    presenter.css = 'hello'
+    presenter.css = '#{style}'
     presenter.list_tag = :ul
-    presenter.list_tag_css = "nav nav-pills nav-stacked city"#{style}
+    presenter.list_tag_css = "nav nav-pills nav-stacked #{style}"
     presenter.max_depth = 6
     first_css = :first
     last_css = :last
